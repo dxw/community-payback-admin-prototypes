@@ -1,4 +1,4 @@
-# Community Payback individual placements prototypes
+# Community Payback admin prototypes
 
 This is where the prototypes for admin features related to managing progress on Community Payback live.
 
