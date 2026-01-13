@@ -1,0 +1,163 @@
+{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
+{% extends "layouts/main.html" %} {% block content %}
+<div class="govuk-grid-row">
+    <h1 class="govuk-heading-l">Age UK</h1>
+
+    {{ govukSummaryList({
+      rows: [
+        {
+          key: {
+            text: "Address"
+          },
+          value: {
+            html: "20 St Ann's Square<br/>Manchester<br/>M2 7HG"
+          }
+        },
+        {
+          key: {
+            text: "Contact"
+          },
+          value: {
+            text: "karen@ageuk.co.uk"
+          }
+        }
+      ]
+    }) }}
+
+    
+
+    <h2 class="govuk-heading-m">
+      This week:<br /><span class="govuk-!-font-weight-regular"
+        >12 January - 18 January 2026</span
+      >
+    </h2>
+
+    <h2 class="govuk-heading-m">Yesterday</h2>
+
+    <div class="govuk-summary-card">
+      <div class="govuk-summary-card__title-wrapper">
+        <h3 class="govuk-summary-card__title">
+          Tuesday 12 January <br />
+          <span class="govuk-!-font-weight-regular">09:00 - 13:00</span>
+        </h3>
+        <ul class="govuk-summary-card__actions" id="status-tag">
+          <li class="govuk-summary-card__action">
+            <strong class="govuk-tag govuk-tag--green"> Did not attend </strong>
+          </li>
+        </ul>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <p class="govuk-summary-value">Chanelle Paine</p>
+            <div class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#"
+                >View<span class="govuk-visually-hidden">
+                  Chanelle Paine's session</span
+                ></a
+              >
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <h2 class="govuk-heading-m">Today</h2>
+    <div class="govuk-summary-card govuk-summary-card--blue">
+      <div class="govuk-summary-card__title-wrapper">
+        <h3 class="govuk-summary-card__title">
+          Wednesday 14 January<br />
+          <span class="govuk-!-font-weight-regular">10:00-12:00</span>
+        </h3>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <p class="govuk-summary-value">Dan Line</p>
+            <div class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#"
+                >Change<span class="govuk-visually-hidden">
+                  Dan Line's session</span
+                ></a
+              >
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <h2 class="govuk-heading-m">Tomorrow</h2>
+    <p class="govuk-body">There are 2 people scheduled for tomorrow</p>
+    <div class="govuk-summary-card">
+      <div class="govuk-summary-card__title-wrapper">
+        <h3 class="govuk-summary-card__title">
+          Thursday 15 January<br />
+          <span class="govuk-!-font-weight-regular">10:00-12:00</span>
+        </h3>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <p class="govuk-summary-value">Rachel Patel</p>
+            <div class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#"
+                >Change<span class="govuk-visually-hidden">
+                  Rachel Patel's session</span
+                ></a
+              >
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div class="govuk-summary-card">
+      <div class="govuk-summary-card__title-wrapper">
+        <h3 class="govuk-summary-card__title">
+          Thursday 15 January<br />
+          <span class="govuk-!-font-weight-regular">13:00 - 15:00</span>
+        </h3>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <p class="govuk-summary-value">Harry Dudley</p>
+            <div class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#"
+                >Change<span class="govuk-visually-hidden">
+                  Harry Dudley's session</span
+                ></a
+              >
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+    <div class="govuk-summary-card">
+      <div class="govuk-summary-card__title-wrapper">
+        <h3 class="govuk-summary-card__title">
+          Sunday 18 January<br />
+          <span class="govuk-!-font-weight-regular"
+            >British Heart Foundation</span
+          >
+        </h3>
+      </div>
+      <div class="govuk-summary-card__content">
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <p class="govuk-summary-value">09:00 - 11:00</p>
+            <div class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#"
+                >Change<span class="govuk-visually-hidden">
+                  whether details are known (Person 2)</span
+                ></a
+              >
+            </div>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <a href="" class="govuk-link govuk-!-font-weight-bold">View more sessions</a>
+  </div>
+</div>
+{% endblock %}
