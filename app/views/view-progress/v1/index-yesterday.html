@@ -8,7 +8,7 @@
     <div class="govuk-width-container">
       <ul class="govuk-grid-row card-group">
         <li class="govuk-grid-column-one-third card-group__item">
-          <div class="govuk-summary-card card card--grey">
+          <div class="govuk-summary-card card">
             <div class="govuk-summary-card__title-wrapper">
               <h3 class="govuk-summary-card__title">Missing outcomes</h3>
             </div>
@@ -16,7 +16,7 @@
               <p
                 class="govuk-!-font-size-80 govuk-!-font-weight-bold color-error"
               >
-                4
+                3
               </p>
             </div>
             <div class="card__action">
@@ -24,9 +24,9 @@
                 class="govuk-section-break govuk-section-break--s govuk-section-break--visible govuk-!-margin-bottom-2"
               />
               <a
-                href="index"
-                class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold"
-                >Clear filter</a
+                href="index-incomplete"
+                class="govuk-link govuk-link--no-visited-state"
+                >Filter sessions</a
               >
             </div>
             <!-- <p class="govuk-body card__description">
@@ -35,7 +35,7 @@
           </div>
         </li>
         <li class="govuk-grid-column-one-third card-group__item">
-          <div class="govuk-summary-card card card--clickable">
+          <div class="govuk-summary-card card card--clickable card--grey">
             <div class="govuk-summary-card__title-wrapper">
               <h3 class="govuk-summary-card__title">Yesterday</h3>
             </div>
@@ -47,9 +47,9 @@
                 class="govuk-section-break govuk-section-break--s govuk-section-break--visible govuk-!-margin-bottom-2"
               />
               <a
-                href="index-yesterday"
+                href="index"
                 class="govuk-link govuk-link--no-visited-state"
-                >Filter sessions</a
+                >Clear filter</a
               >
             </div>
           </div>
@@ -91,7 +91,7 @@
         </tr>
       </thead>
       <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
+        <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             <a class="govuk-link govuk-link--no-visited-state  href="people/1">Chanelle Paine</a>
           </td>
@@ -100,22 +100,10 @@
           <td class="govuk-table__cell"></td>
         </tr>
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Dan Line</td>
-          <td class="govuk-table__cell">Mind</td>
-          <td class="govuk-table__cell">14 Jan 2025</td>
-          <td class="govuk-table__cell"></td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Rachel Patel</td>
-          <td class="govuk-table__cell">Age UK</td>
-          <td class="govuk-table__cell">15 Jan 2025</td>
-          <td class="govuk-table__cell"></td>
-        </tr>
-        <tr class="govuk-table__row">
-          <td class="govuk-table__cell">Harry Dudley</td>
-          <td class="govuk-table__cell">Age UK</td>
-          <td class="govuk-table__cell">15 Jan 2025</td>
-          <td class="govuk-table__cell"></td>
+          <td class="govuk-table__cell">Harry Jones</td>
+          <td class="govuk-table__cell">Emmaus</td>
+          <td class="govuk-table__cell">13 Jan 2025</td>
+          <td class="govuk-table__cell">Attended</td>
         </tr>
       </tbody>
     </table>
@@ -135,7 +123,7 @@
       </thead>
       <tbody class="govuk-table__body">
         <tr class="govuk-table__row">
-          <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state href="partners/1">Age UK</a></td>
+          <td class="govuk-table__cell"><a href="partners/1">Age UK</a></td>
           <td class="govuk-table__cell">14 Jan 2025</td>
           <td class="govuk-table__cell govuk-table__cell--numeric">1</td>
         </tr>
