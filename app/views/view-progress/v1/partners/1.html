@@ -1,38 +1,72 @@
-{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %}
-{% extends "layouts/main.html" %} {% block content %}
+{% from "govuk/components/summary-list/macro.njk" import govukSummaryList %} {%
+extends "layouts/main.html" %} {% block content %}
 <div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
     <h1 class="govuk-heading-l">Age UK</h1>
 
-    {{ govukSummaryList({
-      rows: [
-        {
-          key: {
-            text: "Address"
-          },
-          value: {
-            html: "20 St Ann's Square<br/>Manchester<br/>M2 7HG"
-          }
-        },
-        {
-          key: {
-            text: "Contact"
-          },
-          value: {
-            text: "karen@ageuk.co.uk"
-          }
-        }
-      ]
-    }) }}
+    {{ govukSummaryList({ rows: [ { key: { text: "Address" }, value: { html: "20
+    St Ann's Square<br />Manchester<br />M2 7HG" } }, { key: { text: "Contact"
+    }, value: { text: "karen@ageuk.co.uk" } } ] }) }}
 
-    
-
-    <h2 class="govuk-heading-m">
+    <h2 class="govuk-heading-m govuk-!-margin-top-9">
       This week:<br /><span class="govuk-!-font-weight-regular"
         >12 January - 18 January 2026</span
       >
     </h2>
 
-    <h2 class="govuk-heading-m">Yesterday</h2>
+    <div class="govuk-width-container">
+      <ul class="govuk-grid-row card-group">
+        <li class="govuk-grid-column-one-quarter card-group__item">
+          <div class="govuk-summary-card card">
+            <div class="govuk-summary-card__title-wrapper">
+              <h3 class="govuk-summary-card__title">Allocations</h3>
+            </div>
+            <div class="govuk-summary-card__content">
+              <p class="govuk-!-font-size-80 govuk-!-font-weight-bold">16</p>
+            </div>
+            <!-- <p class="govuk-body card__description">
+              Search for someone in any establishment, or who has been released.
+            </p> -->
+          </div>
+        </li>
+        <li class="govuk-grid-column-one-quarter card-group__item">
+          <div class="govuk-summary-card card">
+            <div class="govuk-summary-card__title-wrapper">
+              <h3 class="govuk-summary-card__title">Did not attend</h3>
+            </div>
+            <div class="govuk-summary-card__content">
+              <p class="govuk-!-font-size-80 govuk-!-font-weight-bold">8</p>
+            </div>
+          </div>
+        </li>
+        <li class="govuk-grid-column-one-quarter card-group__item">
+          <div class="govuk-summary-card card">
+            <div class="govuk-summary-card__title-wrapper">
+              <h3 class="govuk-summary-card__title">Attended</h3>
+            </div>
+            <div class="govuk-summary-card__content">
+              <p class="govuk-!-font-size-80 govuk-!-font-weight-bold">4</p>
+            </div>
+          </div>
+        </li>
+        <li class="govuk-grid-column-one-quarter card-group__item">
+          <div class="govuk-summary-card card">
+            <div class="govuk-summary-card__title-wrapper">
+              <h3 class="govuk-summary-card__title">Missing outcomes</h3>
+            </div>
+            <div class="govuk-summary-card__content">
+              <p
+                class="govuk-!-font-size-80 govuk-!-font-weight-bold color-error"
+              >
+                4
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <h2 class="govuk-heading-m govuk-!-margin-top-6">Yesterday</h2>
 
     <div class="govuk-summary-card">
       <div class="govuk-summary-card__title-wrapper">
@@ -157,7 +191,9 @@
       </div>
     </div>
 
-    <a href="" class="govuk-link govuk-!-font-weight-bold">View more sessions</a>
+    <a href="" class="govuk-link govuk-!-font-weight-bold"
+      >View more sessions</a
+    >
   </div>
 </div>
 {% endblock %}

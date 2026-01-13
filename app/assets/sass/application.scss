@@ -11,7 +11,7 @@
   border: 1px solid #d9dadb;
   position: relative;
   width: 100%;
-  padding: 25px;
+  border-bottom-width: 5px;
 }
 
 .card__heading {
@@ -19,12 +19,17 @@
   margin-bottom: 15px;
 }
 
-.card__description {
-  margin-bottom: 0;
+.card {
+  .govuk-summary-card__title-wrapper {
+    padding: 15px;
+  }
+  .govuk-summary-card__title {
+    font-size: 1.15rem;
+  }
 }
 
-.card--clickable {
-  border-bottom-width: 5px;
+.card__description {
+  margin-bottom: 0;
 }
 
 .card--clickable:hover,
@@ -117,4 +122,8 @@
   .govuk-summary-list__column {
     display: table;
   }
+}
+
+.color-error {
+  color: $govuk-error-colour;
 }
