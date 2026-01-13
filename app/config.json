@@ -1,5 +1,5 @@
 {
-  "serviceName": "Track progress on individual placements",
+  "serviceName": "Track progress on Community Payback",
   "plugins": {
     "govuk-frontend": {
       "rebrand": true
