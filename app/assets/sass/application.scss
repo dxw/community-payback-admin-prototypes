@@ -32,6 +32,16 @@
   margin-bottom: 0;
 }
 
+.card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__action {
+  padding: 1rem;
+}
+
 .card--clickable:hover,
 .card--clickable:active {
   cursor: pointer;
@@ -63,6 +73,10 @@
 .card--clickable:active {
   border-color: #b1b4b6;
   bottom: -1px;
+}
+
+.card--grey {
+  background-color: #f3f2f1;
 }
 
 .card-group {
