@@ -1,0 +1,19 @@
+{% from "govuk/components/pagination/macro.njk" import govukPagination %}
+
+{{ govukPagination({
+  next: {
+    href: "#"
+  },
+  items: [
+    {
+      number: 1,
+      current: true
+    },
+    {
+      number: 2
+    },
+    {
+      number: 3
+    }
+  ]
+}) }}
