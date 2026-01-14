@@ -1,0 +1,12 @@
+{% from "govuk/components/notification-banner/macro.njk" import govukNotificationBanner %}
+
+{% set html %}
+  <p class="govuk-notification-banner__heading">
+    You have not updated Maya Green’s outcome for three days.
+  </p>
+  <p class="govuk-body"><a href="people/5">Update the outcome</a> or contact the host partner at <a href="mailto:karen@ageuk.co.uk">karen@ageuk.co.uk</a></p>
+{% endset %}
+
+{{ govukNotificationBanner({
+  html: html
+}) }}
