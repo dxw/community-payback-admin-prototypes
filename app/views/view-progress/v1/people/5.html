@@ -1,4 +1,7 @@
-{% extends "layouts/main.html" %} {% block content %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %} {%
+extends "layouts/main.html" %} {% block beforeContent %} {{ govukBackLink({
+text: "Back", href: "/view-progress/v1/index" }) }} {% endblock %} {% block
+content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
     <span class="govuk-caption-l">N56123458</span>
