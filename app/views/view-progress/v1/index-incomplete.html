@@ -7,7 +7,7 @@
     {% include "./shared/notification-banner.njk" %}
 
     <h2 class="govuk-heading-m">People on individual placements</h2>
-    <div class="govuk-width-container">
+    <div class="govuk-width-container" id="missing-outcomes" id="people">
       <ul class="govuk-grid-row card-group">
         <li class="govuk-grid-column-one-third card-group__item">
           <div class="govuk-summary-card card card--grey">
@@ -26,7 +26,7 @@
                 class="govuk-section-break govuk-section-break--s govuk-section-break--visible govuk-!-margin-bottom-2"
               />
               <a
-                href="index"
+                href="index#missing-outcomes"
                 class="govuk-link govuk-link--no-visited-state govuk-!-font-weight-bold"
                 >Clear filter</a
               >
@@ -37,7 +37,7 @@
           </div>
         </li>
         <li class="govuk-grid-column-one-third card-group__item">
-          <div class="govuk-summary-card card card--clickable">
+          <div class="govuk-summary-card card">
             <div class="govuk-summary-card__title-wrapper">
               <h3 class="govuk-summary-card__title">Yesterday</h3>
             </div>
@@ -49,7 +49,7 @@
                 class="govuk-section-break govuk-section-break--s govuk-section-break--visible govuk-!-margin-bottom-2"
               />
               <a
-                href="index-yesterday"
+                href="index-yesterday#missing-outcomes"
                 class="govuk-link govuk-link--no-visited-state"
                 >Filter sessions</a
               >
